@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const Game = ({ name, released, image }) => {
   return (
-    <div>
+    <StyledGame>
       <h3>{name}</h3>
       <p>{released}</p>
       <img src={image} alt={name} />
-    </div>
+    </StyledGame>
   );
 };
 
@@ -20,7 +20,7 @@ const StyledGame = styled(motion.div)`
   border-radius: 1rem;
   img {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     object-fit: cover;
   }
 `;
